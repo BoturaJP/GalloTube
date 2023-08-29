@@ -15,10 +15,6 @@ namespace GalloTube.Models;
     [StringLength(100, ErrorMessage = "O Título deve possuir no máximo 100 caracteres")]
     public string Title { get; set; }
 
-     [Display(Name = "Título Original")]
-    [Required(ErrorMessage = "O Título Original é obrigatório")]
-    [StringLength(100, ErrorMessage = "O Título Original deve possuir no máximo 100 caracteres")]
-    public string OriginalTitle { get; set; }
 
     [Display(Name = "Descrição")]
     [Required(ErrorMessage = "A Descrição é obrigatória")]
@@ -34,12 +30,8 @@ namespace GalloTube.Models;
     [Required(ErrorMessage = "A Duração é obrigatória")]
     public Int16 Duration { get; set; }
 
-    [Display(Name = "Classificação Etária")]
-    [Required(ErrorMessage = "A Classificação Etária é obrigatória")]
-    public byte AgeRating { get; set; }
-
     [StringLength(200)]
-    [Display(Name = "Foto")]
+    [Display(Name = "Thumbnail")]
     public string Image { get; set; }
 
      [NotMapped]
@@ -48,9 +40,7 @@ namespace GalloTube.Models;
         return TimeSpan.FromMinutes(Duration) .ToString(@"%h'h 'mm'min'");
     }}
 
-public ICollection<VideoComment> Comments { get; set; }
     public ICollection<VideoTag> Tags { get; set; }
-    public ICollection<VideoRating> Ratings { get; set; }
 
 
     

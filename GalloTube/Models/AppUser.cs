@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace GalloTube.Models;
 
-    public class AppUser
+    public class AppUser : IdentityUser
     {
         
     [Required]
@@ -16,8 +16,8 @@ namespace GalloTube.Models;
 
     [StringLength(200)]
     public string ProfilePicture { get; set; }
-    public ICollection<VideoComment> Comments { get; set; }
-    public ICollection<VideoRating> Ratings { get; set; }
+
+
 }
         
     
