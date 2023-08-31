@@ -11,9 +11,9 @@ public class AppDbContext : IdentityDbContext
     }
 
     public DbSet<AppUser> AppUsers { get; set; }
-    public DbSet<Tag> Genres { get; set;}
-    public DbSet<Video> Movies { get; set; }
-    public DbSet<VideoTag> MovieGenres { get; set; }
+    public DbSet<Tag> Tags { get; set;}
+    public DbSet<Video> Videos { get; set; }
+    public DbSet<VideoTag> VideoTags { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder) //void não tem retorno
     {
@@ -45,7 +45,7 @@ public class AppDbContext : IdentityDbContext
         });
         #endregion
 
-        #region Many To Many - MovieGenre
+        #region Many To Many - VideoTag
         // Definição de Chave Primária Composta
         builder.Entity<VideoTag>().HasKey(
             mg => new { mg.VideoId, mg.TagId }

@@ -21,7 +21,6 @@ namespace GalloTube.Models;
     [StringLength(8000, ErrorMessage = "A Descrição deve possuir no máximo 5000 caracteres")]
     public string Descrition { get; set; }
 
-    [Column(TypeName = "Data")]
     [Display(Name = "Data")]
     [Required(ErrorMessage = "A data é obrigatória")]
     public Int16 VideoData { get; set; }

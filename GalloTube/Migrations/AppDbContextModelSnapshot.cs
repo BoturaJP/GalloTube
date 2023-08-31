@@ -59,7 +59,7 @@ namespace GalloTube.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<short>("VideoData")
-                        .HasColumnType("Data");
+                        .HasColumnType("smallint");
 
                     b.HasKey("Id");
 
@@ -111,22 +111,22 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0376c415-c57d-4341-9931-f52f431aa932",
-                            ConcurrencyStamp = "ab9fa499-01dc-42ab-90c8-63a3cc75686a",
+                            Id = "2975092c-5bd6-4907-a16e-f201b7091fa7",
+                            ConcurrencyStamp = "f6f65158-3142-40dc-b0a1-6f8180e36581",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "05e20ca0-5e8c-4ec0-8359-d03a9a00c4a2",
-                            ConcurrencyStamp = "b15997b0-6d18-4c05-8739-357d0301dcc9",
+                            Id = "c1177de1-5e91-4f57-8d28-823a8f84b75d",
+                            ConcurrencyStamp = "ae8285a5-3235-4a1b-b81e-77c92a179133",
                             Name = "Moderador",
                             NormalizedName = "MODERADOR"
                         },
                         new
                         {
-                            Id = "ae9acd3d-e6a7-481c-9c9a-062a01fdf236",
-                            ConcurrencyStamp = "81035d8c-2eef-4621-baad-9028ad0bf59f",
+                            Id = "7dda3043-142b-46e7-99a1-8ab7384faa7d",
+                            ConcurrencyStamp = "4b440a40-0bbf-4351-9784-0b65e9de5e52",
                             Name = "Usuário",
                             NormalizedName = " USUÁRIO"
                         });
@@ -287,8 +287,8 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7c066397-f074-4322-92aa-168c6f810a18",
-                            RoleId = "0376c415-c57d-4341-9931-f52f431aa932"
+                            UserId = "ff3376f8-f350-4369-9517-27de7b926e6c",
+                            RoleId = "2975092c-5bd6-4907-a16e-f201b7091fa7"
                         });
                 });
 
@@ -332,18 +332,18 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7c066397-f074-4322-92aa-168c6f810a18",
+                            Id = "ff3376f8-f350-4369-9517-27de7b926e6c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fa7a9454-2f5f-47ab-a439-5b8bfe2a4f49",
+                            ConcurrencyStamp = "165dbf12-f0d4-484e-9273-a8513169c433",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEGzfphG6d6gweFp0LvS1u2ep6SyGq5YB06BVwSHOtd1wilEA0kshyzlW9ggMHVqaA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKdVTpEluVg/AkQb+FmaQLbsd3hPsyQxTwTqZQV3CJROkP1TM2rbFIn23SZPQGQVHw==",
                             PhoneNumber = "14912345678",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "111c6a14-6039-4d56-ba88-b376bf43db55",
+                            SecurityStamp = "5dc8cca5-261a-438c-94a1-d5969eef6542",
                             TwoFactorEnabled = false,
                             UserName = "Admin",
                             DateOfBirth = new DateTime(2005, 11, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),

@@ -4,7 +4,7 @@ using GalloTube.Models;
 using GalloTube.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace GalloFlix.Controllers;
+namespace GalloTube.Controllers;
 
 public class HomeController : Controller
 {
@@ -19,8 +19,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var movies = _context.Movies.Include(m => m.Tags).ThenInclude(g => g.Tag).ToList();
-        return View(movies);
+        var videos = _context.Videos.Include(m => m.Tags).ThenInclude(g => g.Tag).ToList();
+        return View(videos);
     }
 
     public IActionResult Privacy()
